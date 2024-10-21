@@ -1,16 +1,13 @@
 name: Second workflow
-
 on: 
-  workflow_dispatch:  # Corrected from 'workflow_dispathcer' to 'workflow_dispatch'
-
+  workflow_dispatch:  
 jobs:
   first-job:
     runs-on: ubuntu-latest
-
-    steps:  # Corrected indentation
-      - name: other run  # Corrected indentation
+    steps:  
+      - name: other run 
         run: |
           echo "some text" >> text.txt
           ls
           pwd
-          echo "${{ toJSON(github) }}"
+          echo "${{ toJSON(  ) }}"
